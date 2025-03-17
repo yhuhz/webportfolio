@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio || Julius Albert Grajo</title>
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="overflow-sm-hidden">
+    <!-- Landing -->
+    <div
+      class="container-fluid text-center vh-100 d-flex flex-column justify-content-between"
+      id="landing"
+    >
+      <div class="row pt-5">
+        <div class="col">
+          <img
+            src="./images/Logo.png"
+            width="100"
+            height="100"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+
+      <div class="row justify-content-center" id="center-row">
+        <div class="col-md-8">
+          <h1 id="hello"><em class="text-dark">Hello</em>, I am Julius!</h1>
+          <p id="subtitle" class="px-sm-5">
+            Crafting code with precision and creativity, I transform ideas into
+            seamless digital experiences.
+          </p>
+        </div>
+      </div>
+
+      <div class="row pb-5">
+        <div class="col">
+          <a href="#about" id="start" class="text-decoration-none px-3 py-2"
+            ><em>Hire me</em></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="container-fluid text-center overflow-sm-hidden" id="about">
+      <div
+        class="d-flex d-grid gap-5 justify-content-center pt-3"
+        id="navigation-about"
+      >
+        <a href="#landing"><i class="bi bi-house"></i></a>
+        <a href="#projects"><i class="bi bi-code-square"></i></a>
+        <a href="#tools"><i class="bi bi-tools"></i></a>
+        <a href="#contact"><i class="bi bi-envelope"></i></a>
+      </div>
+
+      <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-6 text-md-start">
+          <h1 id="about-me">About <span>Julius Albert Grajo</span></h1>
+          <p id="description" class="text-dark pb-md-3">
+            A highly organized and efficient professional with a diverse
+            background in executive assistance, sales, project management,
+            software development, lead verification, recruitment, teaching, and
+            customer support. Skilled in managing high-level tasks, optimizing
+            workflows, and leading projects to successful completion, this
+            individual has extensive experience in customer relations, technical
+            support, and educational enhancement.
+          </p>
+
+          <a href="#projects" class="text-decoration-none px-3 py-2 rounded"
+            >Wanna view my projects? Click here.</a
+          >
+        </div>
+        <div class="col-md-4 mt-md-5">
+          <img
+            src="./images/mypic.jpg"
+            class="img-fluid rounded-circle"
+            id="mypicture"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid overflow-sm-auto" id="projects">
+      <div
+        class="d-flex d-grid gap-5 justify-content-center pt-3"
+        id="navigation-projects"
+      >
+        <a href="#landing"><i class="bi bi-house"></i></a>
+        <a href="#about"><i class="bi bi-person-bounding-box"></i></a>
+        <a href="#tools"><i class="bi bi-tools"></i></a>
+        <a href="#contact"><i class="bi bi-envelope"></i></a>
+      </div>
+
+      <div class="row text-center py-5">
+        <div class="col">
+          <h1 id="projects-title">Projects Gallery</h1>
+          <p id="project-subtitle">Here are some of the projects I worked on</p>
+
+          <a
+            href="#contact"
+            class="fst-italic text-decoration-none py-2 px-3"
+            id="connectbtn"
+            >Leave me a message here</a
+          >
+        </div>
+      </div>
+
+      <div class="row gap-5 px-5 mb-3 justify-content-center">
+        <div class="col-md text-center card p-0">
+          <img src="./images/projects/ecommerce-api.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="pt-md-3 pb-md-2">E-Commerce API Documentation</h4>
+            <p>
+              Dynamic E-Commerce Workflow Management. The system features
+              dynamic routes for order processing, real-time inventory updates,
+              and secure user authentication. It also supports seamless
+              automated order reporting and comprehensive product management.
+              Documented Backend API published publicly using Postman.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md text-center card p-0">
+          <!-- carousel 2 -->
+          <img
+            src="./images/projects/course-booking-api.png"
+            class="card-img-top"
+          />
+          <div class="card-body bg-light">
+            <h4 class="pt-md-3 pb-md-2">Course Booking API Documentation</h4>
+            <p>
+              RESTful API for managing course enrollments, featuring user
+              registration, authentication, and retrieval of user details.
+              Supports course creation, updates, archiving, activation, and
+              student enrollment. Publicly documented using Postman.
+            </p>
+          </div>
+        </div>
+        <div class="col-md text-center card p-0">
+          <img
+            src="./images/projects/course-booking-app.jpg"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h4 class="pt-md-3 pb-md-2">Course Booking App</h4>
+            <p>
+              Course booking App A MERN-stack course enrollment system featuring
+              user registration, authentication, and profile management.
+              Authenticated users can create, update, archive, and activate
+              courses. The platform also allows users to browse available
+              courses and enroll seamlessly.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row gap-5 px-5 my-5 justify-content-center">
+        <div class="col-md text-center card p-0">
+          <img src="./images/projects/ecommerce-app.png" class="card-img-top" />
+          <div class="card-body">
+            <h4 class="pt-md-3 pb-md-2">E-Commerce App</h4>
+            <p>
+              MERN E-Commerce Platform. The platform features dynamic product
+              catalog with filtering and sorting, real-time search, seamless
+              cart updates, secure checkout, and a comprehensive admin dashboard
+              with real-time analytics and user management capabilities.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md text-center card p-0">
+          <!-- carousel 2 -->
+          <img
+            src="./images/projects/airline-booking-mockup.png"
+            class="card-img-top"
+          />
+          <div class="card-body bg-light">
+            <h4 class="pt-md-3 pb-md-2">Airline Booking System Mockup</h4>
+            <p>
+              Side Project Conceptual design showcasing an intuitive UI for
+              flight search, seat selection, and booking confirmation, focusing
+              on user experience and workflow efficiency.
+            </p>
+          </div>
+        </div>
+        <div class="col-md text-center card p-0">
+          <img
+            src="./images/projects/airline-booking-prototype.png"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h4 class="pt-md-3 pb-md-2">Airline Booking System Prototype</h4>
+            <p>
+              Side Project: Interactive prototype simulating end-to-end airline
+              booking functionalities, including flight search, reservation,
+              payment processing, and real-time ticket management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="container-fluid text-center" id="tools">
+      <div
+        class="d-flex d-grid gap-5 justify-content-center pt-3"
+        id="navigation-about"
+      >
+        <a href="#landing"><i class="bi bi-house"></i></a>
+        <a href="#about"><i class="bi bi-person-bounding-box"></i></a>
+        <a href="#projects"><i class="bi bi-code-square"></i></a>
+        <a href="#contact"><i class="bi bi-envelope"></i></a>
+      </div>
+
+      <div class="justify-content-center p-5">
+        <h1 id="about-me">What <span>tools</span> do I use?</h1>
+        <div class="d-flex d-grid gap-3 justify-content-center mt-5">
+          <img src="./images/html.png" class="tools-img" />
+          <img src="./images/css.png" class="tools-img" />
+          <img src="./images/javascript.png" class="rounded tools-img" />
+          <img src="./images/react.webp" class="tools-img" />
+          <img src="./images/mongodb.png" class="tools-img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-fluid d-flex flex-column" id="contact">
+      <div class="row justify-content-lg-start px-sm-5" id="contact-row-1">
+        <div class="col-lg-8 pt-5 px-5 text-center text-lg-start">
+          <h1>
+            Reach out if you want to create impactful apps and websites
+            together.
+          </h1>
+          <hr size="5" />
+          <h3>To see more of my work, contact me here:</h3>
+          <div
+            class="d-flex justify-content-center justify-content-lg-start d-grid gap-4"
+            id="socials"
+          >
+            <a href="https://www.facebook.com/juliusgrajo09/" target="_blank"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <a href="https://github.com/yhuhz" target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/juliusalbertgrajo" target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <a href="mailto:someone@example.com"
+              ><i class="bi bi-envelope-at-fill"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row justify-content-center justify-content-lg-end px-5 mx-sm-5 pb-5 mt-md-5"
+      >
+        <div class="col-xl-4 text-center">
+          <h2>Leave me a message</h2>
+          <hr size="5" />
+          <form>
+            <div class="mb-3 d-md-flex gap-2 justify-content-center">
+              <div class="flex-fill">
+                <label for="email" class="form-label">EMAIL ADDRESS</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+
+              <div class="flex-fill mt-3 mt-sm-0">
+                <label for="name" class="form-label">NAME</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                placeholder="What's on your mind?"
+                id="message-textarea"
+              ></textarea>
+            </div>
+
+            <div class="d-sm-flex justify-content-sm-start">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#submitConfirm"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="modal" tabindex="-1" id="submitConfirm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Let's chat soon!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Thank you for your message. I'll reach out to you soon!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">
+                Awesome
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="row my-lg-auto mb-md-5">
+        <div class="col">
+          <footer class="text-center p-3">
+            <h4>Julius Albert Grajo</h4>
+            <div class="d-flex gap-3 justify-content-center">
+              <a href="#landing">Home</a>
+              <a href="#about">About</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </div>
+
+            <small>
+              Copyright&copy;2025 All rights reserved | This website is made by
+              my own two hands
+            </small>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
