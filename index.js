@@ -27,6 +27,11 @@ function validateAndSendMail(event) {
   // If validation passes, send the email and show the modal
   sendMail(); // Call your sendMail function
 
+  // Clear the form fields
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('message').value = '';
+
   // Programmatically trigger the modal
   const modal = new bootstrap.Modal(document.getElementById('submitConfirm'));
   modal.show();
