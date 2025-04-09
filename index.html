@@ -19,6 +19,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: '_fzamJwkmtILLc6V5',
+        });
+      })();
+    </script>
+    <script src="index.js"></script>
   </head>
   <body class="overflow-sm-hidden">
     <!-- Landing -->
@@ -309,7 +322,7 @@
               <textarea
                 class="form-control"
                 placeholder="What's on your mind?"
-                id="message-textarea"
+                id="message"
               ></textarea>
             </div>
 
@@ -319,6 +332,7 @@
                 class="btn btn-primary"
                 data-bs-toggle="modal"
                 data-bs-target="#submitConfirm"
+                onclick="sendMail()"
               >
                 Submit
               </button>
