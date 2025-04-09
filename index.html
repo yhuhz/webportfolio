@@ -333,9 +333,7 @@
               <button
                 type="submit"
                 class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#submitConfirm"
-                onclick="validateAndSendMail()"
+                onclick="validateAndSendMail(event)"
               >
                 Submit
               </button>
@@ -344,6 +342,7 @@
         </div>
       </div>
 
+      <!-- Modal for successful sending -->
       <div class="modal" tabindex="-1" id="submitConfirm">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -362,6 +361,34 @@
             <div class="modal-footer">
               <button type="button" class="btn" data-bs-dismiss="modal">
                 Awesome
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal for required fields -->
+      <div class="modal" tabindex="-1" id="fillUpFields">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Please fill up the form</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Unable to send your message. Please ensure all required fields
+                are filled out correctly.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">
+                Okay
               </button>
             </div>
           </div>

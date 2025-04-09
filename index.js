@@ -19,17 +19,15 @@ function validateAndSendMail(event) {
 
   // Check if required fields are filled
   if (!name || !email || !message) {
-    alert('Please fill in all required fields before submitting.');
+    const modal = new bootstrap.Modal(document.getElementById('fillUpFields'));
+    modal.show();
     return;
   }
 
   // If validation passes, send the email and show the modal
   sendMail(); // Call your sendMail function
-  const modalTriggerButton = document.querySelector(
-    '[data-bs-target="#submitConfirm"]'
-  );
-  const modalInstance = new bootstrap.Modal(
-    document.getElementById('submitConfirm')
-  );
-  modalInstance.show(); // Programmatically show the modal
+
+  // Programmatically trigger the modal
+  const modal = new bootstrap.Modal(document.getElementById('submitConfirm'));
+  modal.show();
 }
