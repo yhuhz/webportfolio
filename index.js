@@ -5,5 +5,5 @@ function sendMail() {
     message: document.getElementById('message').value,
   };
 
-  emialjs.send('service_60uyshx', 'template_i321zgr', params);
+  emailjs.send('service_60uyshx', 'template_i321zgr', params);
 }
