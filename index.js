@@ -97,7 +97,7 @@ const projects = [
   {
     title: 'Costa de Salina',
     description:
-      'Designed and developed a responsive website for a resort in Oas, Albay, highlighting local attractions and accommodations. Integrated interactive features like booking forms and real-time feedback using HTML, CSS, JavaScript, and PHP. This student project demonstrates my ability to combine technical skills and creative design for engaging user experiences.',
+      'Designed and developed a website for a resort in Oas, Albay, highlighting local attractions and accommodations. Integrated interactive features like booking forms and real-time feedback using HTML, CSS, JavaScript, and PHP. This student project demonstrates my ability to combine technical skills and creative design for engaging user experiences.',
     imgSrc: './images/projects/CDS.png',
     links: [
       {
