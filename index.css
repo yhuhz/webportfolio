@@ -7,14 +7,6 @@ body {
   background-color: #f4f1e8 !important;
 }
 
-.navlink {
-  transition: transform 0.2s;
-}
-
-.navlink:hover {
-  transform: scale(1.5);
-}
-
 #landing {
   background-color: #f4f1e8;
   display: flex;
@@ -60,16 +52,14 @@ body {
   color: #ffbc87;
 }
 
-#about-me-btn {
+#about-me ~ a {
   background-color: #f4f1e8;
   color: #9b4819;
-  transition: transform 0.2s;
-  display: inline-block; /* Ensure hover works */
-  cursor: pointer; /* Indicate interactivity */
 }
 
-#about-me-btn:hover {
-  transform: scale(1.2);
+#about-me ~ a:hover {
+  background-color: #ffbc87;
+  color: #2f4858;
 }
 
 #mypicture {
@@ -199,72 +189,6 @@ body {
 .tools-img {
   max-width: 70px; /* Default for all screens */
   height: auto; /* Maintain aspect ratio */
-  /* transition: transform 0.2s; */
-}
-
-/* .tools-img:hover {
-  transform: scale(1.4);
-} */
-
-.carousel-wrapper {
-  overflow: hidden;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.carousel {
-  display: flex;
-  width: max-content;
-}
-
-.carousel .col-auto {
-  flex: 0 0 auto;
-  width: 80px; /* Very small on mobile */
-  margin-right: 8px; /* Tight gap on mobile */
-}
-
-/* Tablet and up */
-@media (min-width: 480px) {
-  .carousel .col-auto {
-    width: 100px;
-    margin-right: 12px;
-  }
-}
-
-/* Small desktop */
-@media (min-width: 768px) {
-  .carousel .col-auto {
-    width: 120px;
-    margin-right: 16px;
-  }
-}
-
-/* Large desktop */
-@media (min-width: 992px) {
-  .carousel .col-auto {
-    max-width: 150px;
-    margin-right: 0;
-  }
-}
-
-/* Animation for all screen sizes */
-.carousel {
-  animation: slide 40s linear infinite;
-}
-
-.carousel:hover {
-  animation-play-state: paused;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
 }
 
 #contact {
@@ -321,11 +245,6 @@ body {
 
 #socials a {
   font-size: 48px;
-  transition: transform 0.2s;
-}
-
-#socials a:hover {
-  transform: scale(1.3);
 }
 
 i {
