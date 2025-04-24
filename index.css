@@ -50,7 +50,7 @@ body {
   background-color: #be8669;
 }
 
-@media screen and (min-height: 1024px) {
+@media screen and (min-width: 1366px) and (min-height: 768px) {
   #about {
     height: 100vh;
   }
@@ -122,11 +122,16 @@ body {
   border-radius: 15px !important;
   overflow: hidden;
   box-shadow: 10px 10px 5px #be8669;
-  transition: transform 0.2s;
 }
 
-.card:hover {
-  transform: scale(1.1);
+@media screen and (min-width: 1366px) {
+  .card {
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
 }
 
 .card h4 {
@@ -160,8 +165,13 @@ body {
 .card-body p {
   font-family: Carlito;
   text-decoration: none;
-  height: 150px; /* Adjust to your desired size */
-  overflow-y: auto; /* Add vertical scrollbars if content exceeds the height */
+}
+
+@media screen and (min-width: 1366px) {
+  .card-body p {
+    height: 150px; /* Adjust to your desired size */
+    overflow-y: auto; /* Add vertical scrollbars if content exceeds the height */
+  }
 }
 
 /* Optional: Style scrollbars for card-body */
