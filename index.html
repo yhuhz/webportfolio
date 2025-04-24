@@ -69,101 +69,53 @@
     </div>
 
     <!-- About -->
-    <div class="container-fluid text-center overflow-sm-hidden" id="about">
+    <div class="container-fluid text-center" id="about">
       <div
-        class="d-flex d-grid gap-5 justify-content-center pt-3"
+        class="d-flex d-grid gap-5 justify-content-center py-3 py-sm-0 pt-lg-3"
         id="navigation-about"
       >
         <a href="#landing" class="navlink"><i class="bi bi-house"></i></a>
         <a href="#projects" class="navlink"
           ><i class="bi bi-code-square"></i
         ></a>
-        <a href="#tools" class="navlink"><i class="bi bi-tools"></i></a>
         <a href="#contact" class="navlink"><i class="bi bi-envelope"></i></a>
       </div>
 
-      <div class="row justify-content-center align-items-center vh-100">
-        <div class="col-md-6 text-md-start">
-          <h1 id="about-me">About <span>Julius Albert Grajo</span></h1>
-          <p id="description" class="text-dark pb-md-3">
-            A dedicated software and web developer with extensive experience in
-            designing and implementing dynamic, responsive web applications.
-            Expertise spans both front-end and back-end technologies, enabling
-            the creation of seamless user experiences and robust
-            functionalities. Proficient in HTML, CSS, JavaScript, React,
-            Node.js, and MongoDB, with a commitment to continuous learning and
-            staying abreast of the latest industry advancements to deliver
-            innovative and high-quality solutions.
-          </p>
-
-          <a
-            href="#projects"
-            class="text-decoration-none px-3 py-2 rounded"
-            id="about-me-btn"
-            >Wanna view my projects? Click here.</a
-          >
-        </div>
-        <div class="col-md-3 mt-md-5">
-          <img
-            src="./images/mypic.jpg"
-            class="img-fluid rounded-circle"
-            id="mypicture"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="container-fluid overflow-sm-auto" id="projects">
       <div
-        class="d-flex d-grid gap-5 justify-content-center pt-3"
-        id="navigation-projects"
+        class="d-flex flex-column justify-content-center align-items-center center-about"
       >
-        <a href="#landing" class="navlink"><i class="bi bi-house"></i></a>
-        <a href="#about" class="navlink"
-          ><i class="bi bi-person-bounding-box"></i
-        ></a>
-        <a href="#tools" class="navlink"><i class="bi bi-tools"></i></a>
-        <a href="#contact" class="navlink"><i class="bi bi-envelope"></i></a>
-      </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 text-md-start">
+            <h1 id="about-me">About <span>Julius Albert Grajo</span></h1>
+            <p id="description" class="text-dark pb-md-3">
+              A dedicated software and web developer with extensive experience
+              in designing and implementing dynamic, responsive web
+              applications. Expertise spans both front-end and back-end
+              technologies, enabling the creation of seamless user experiences
+              and robust functionalities. Proficient in HTML, CSS, JavaScript,
+              React, Node.js, and MongoDB, with a commitment to continuous
+              learning and staying abreast of the latest industry advancements
+              to deliver innovative and high-quality solutions.
+            </p>
 
-      <div class="row text-center py-5">
-        <div class="col">
-          <h1 id="projects-title">Projects Gallery</h1>
-          <p id="project-subtitle">Here are some of the projects I worked on</p>
-
-          <a
-            href="#contact"
-            class="fst-italic text-decoration-none py-2 px-3"
-            id="connectbtn"
-            >Leave me a message here</a
-          >
+            <a
+              href="#projects"
+              class="text-decoration-none px-3 py-2 mb-3 mb-md-0 rounded"
+              id="about-me-btn"
+              >Wanna view my projects? Click here.</a
+            >
+          </div>
+          <div class="col-md-3 mt-md-5">
+            <img
+              src="./images/mypic.jpg"
+              class="img-fluid rounded-circle"
+              id="mypicture"
+            />
+          </div>
         </div>
       </div>
 
-      <div
-        id="projects-container"
-        class="row justify-content-center mb-5 gap-5 px-3 d-flex"
-      ></div>
-    </div>
-
-    <!-- Tools -->
-    <div class="container-fluid text-center" id="tools">
-      <div
-        class="d-flex d-grid gap-5 justify-content-center pt-3"
-        id="navigation-about"
-      >
-        <a href="#landing" class="navlink"><i class="bi bi-house"></i></a>
-        <a href="#about" class="navlink"
-          ><i class="bi bi-person-bounding-box"></i
-        ></a>
-        <a href="#projects" class="navlink"
-          ><i class="bi bi-code-square"></i
-        ></a>
-        <a href="#contact" class="navlink"><i class="bi bi-envelope"></i></a>
-      </div>
-
-      <div class="justify-content-center p-5">
+      <div class="justify-content-center pt-3">
         <h1 id="about-me">What <span>tools</span> do I use?</h1>
         <div class="container mt-5">
           <div class="carousel-wrapper">
@@ -220,6 +172,39 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid overflow-sm-auto" id="projects">
+      <div
+        class="d-flex d-grid gap-5 justify-content-center pt-3"
+        id="navigation-projects"
+      >
+        <a href="#landing" class="navlink"><i class="bi bi-house"></i></a>
+        <a href="#about" class="navlink"
+          ><i class="bi bi-person-bounding-box"></i
+        ></a>
+        <a href="#contact" class="navlink"><i class="bi bi-envelope"></i></a>
+      </div>
+
+      <div class="row text-center py-5">
+        <div class="col">
+          <h1 id="projects-title">Projects Gallery</h1>
+          <p id="project-subtitle">Here are some of the projects I worked on</p>
+
+          <a
+            href="#contact"
+            class="fst-italic text-decoration-none py-2 px-3"
+            id="connectbtn"
+            >Leave me a message here</a
+          >
+        </div>
+      </div>
+
+      <div
+        id="projects-container"
+        class="row justify-content-center mb-5 gap-5 px-3 d-flex"
+      ></div>
     </div>
 
     <!-- Contact -->

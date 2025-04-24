@@ -224,14 +224,13 @@ const container = document.getElementById('projects-container');
 
 projects.forEach((project, index) => {
   const projectCard = document.createElement('div');
-  projectCard.className = 'col-md-3 col-sm-6 text-center card p-0';
+  projectCard.className = 'col-12 col-md-4 col-lg-3 text-center card p-0';
 
-  // Alternate background colors based on the index
   const bgColor = index % 2 === 0 ? '#f4f1e8' : '#ffe8d2';
 
   projectCard.innerHTML = `
     <img src="${project.imgSrc}" class="card-img-top" />
-    <div class="card-body" style="background-color: ${bgColor}">
+    <div class="card-body" style="background-color: ${bgColor}; padding: 10px;">
       <h4 class="pt-md-3 pb-md-2">${project.title}</h4>
       <p>${project.description}</p>
       <div class="technologies mt-3">
