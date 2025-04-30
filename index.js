@@ -139,8 +139,7 @@ const projects = [
     links: [
       {
         text: 'Project Link',
-        url: '#',
-        disabled: true,
+        url: 'https://jnstore.vercel.app/',
       },
     ],
     technologies: [
