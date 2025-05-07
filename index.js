@@ -80,6 +80,38 @@ const projects = [
     ],
   },
   {
+    title: 'Online Education Hub Project',
+    description:
+      'Designed and developed a responsive website for a fictional online education platform, utilizing HTML, CSS, and Bootstrap. The project showcases clean UI design, mobile-friendly layouts, and intuitive navigation to enhance the user experience.',
+    imgSrc: './images/projects/Alexandria.png',
+    links: [
+      {
+        text: 'Project Link',
+        url: 'https://yhuhz.github.io/educational-resource-hub/',
+      },
+    ],
+    technologies: [
+      { name: 'HTML', logo: techLogos.HTML },
+      { name: 'CSS', logo: techLogos.CSS },
+      { name: 'Bootstrap', logo: techLogos.Bootstrap },
+    ],
+  },
+  {
+    title: 'Pastry Shop Project',
+    description:
+      'Developed a vibrant and inviting website for Macaroon 5, a fictional pastry shop specializing in artisanal macarons and baked goods. Leveraging HTML, CSS, and JavaScript, I crafted user-friendly layouts and seamless navigation, ensuring an engaging browsing experience. The design highlights the shop’s dedication to quality ingredients and delightful flavors, effectively showcasing products and brand identity.',
+    imgSrc: './images/projects/Macaroon5.png',
+    links: [
+      { text: 'Project Link', url: 'https://yhuhz.github.io/macaroon-5/' },
+    ],
+    technologies: [
+      { name: 'HTML', logo: techLogos.HTML },
+      { name: 'CSS', logo: techLogos.CSS },
+      { name: 'Bootstrap', logo: techLogos.Bootstrap },
+      { name: 'JS', logo: techLogos.JavaScript },
+    ],
+  },
+  {
     title: 'Orders and Produce',
     description:
       'Created a website for a fictional store selling religious items, emphasizing its mission to support the poor and promote charity. Utilized HTML, CSS, and JavaScript to design user-friendly layouts and navigation, showcasing products and mission effectively.',
