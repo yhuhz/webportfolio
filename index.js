@@ -112,6 +112,41 @@ const projects = [
     ],
   },
   {
+    title: 'E-Commerce App',
+    description:
+      'MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.',
+    imgSrc: './images/projects/ecommerce-app.png',
+    links: [
+      {
+        text: 'Project Link',
+        url: 'https://jnstore.vercel.app/',
+      },
+    ],
+    technologies: [
+      { name: 'React', logo: techLogos.React },
+      { name: 'React Bootstrap', logo: techLogos.ReactBootstrap },
+      { name: 'JS', logo: techLogos.JavaScript },
+    ],
+  },
+  {
+    title: 'E-Commerce API Documentation',
+    description:
+      'Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.',
+    imgSrc: './images/projects/EcommerceAPI.png',
+    links: [
+      {
+        text: 'View API Documentation',
+        url: 'https://documenter.getpostman.com/view/40605097/2sB2ca7fWm',
+      },
+    ],
+    technologies: [
+      { name: 'JS', logo: techLogos.JavaScript },
+      { name: 'Express', logo: techLogos.Express },
+      { name: 'MongoDB', logo: techLogos.MongoDB },
+      { name: 'Postman', logo: techLogos.Postman },
+    ],
+  },
+  {
     title: 'Orders and Produce',
     description:
       'Created a website for a fictional store selling religious items, emphasizing its mission to support the poor and promote charity. Utilized HTML, CSS, and JavaScript to design user-friendly layouts and navigation, showcasing products and mission effectively.',
@@ -145,41 +180,7 @@ const projects = [
       { name: 'MySQL', logo: techLogos.MySQL },
     ],
   },
-  {
-    title: 'E-Commerce API Documentation',
-    description:
-      'Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.',
-    imgSrc: './images/projects/EcommerceAPI.png',
-    links: [
-      {
-        text: 'View API Documentation',
-        url: 'https://documenter.getpostman.com/view/40605097/2sB2ca7fWm',
-      },
-    ],
-    technologies: [
-      { name: 'JS', logo: techLogos.JavaScript },
-      { name: 'Express', logo: techLogos.Express },
-      { name: 'MongoDB', logo: techLogos.MongoDB },
-      { name: 'Postman', logo: techLogos.Postman },
-    ],
-  },
-  {
-    title: 'E-Commerce App',
-    description:
-      'MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.',
-    imgSrc: './images/projects/ecommerce-app.png',
-    links: [
-      {
-        text: 'Project Link',
-        url: 'https://jnstore.vercel.app/',
-      },
-    ],
-    technologies: [
-      { name: 'React', logo: techLogos.React },
-      { name: 'React Bootstrap', logo: techLogos.ReactBootstrap },
-      { name: 'JS', logo: techLogos.JavaScript },
-    ],
-  },
+
   {
     title: 'Course Booking API Documentation',
     description:
