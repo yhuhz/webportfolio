@@ -147,6 +147,41 @@ const projects = [
     ],
   },
   {
+    title: 'Fitness Tracker App',
+    description:
+      'MERN Fitness Tracker App: A simple workout logging platform built with MongoDB, Express.js, React, and Node.js, featuring React Bootstrap for a sleek, responsive UI. Users can add, update, delete, and retrieve workouts effortlessly, with intuitive filtering for easy tracking.',
+    imgSrc: './images/projects/FitnessTrackerApp.png',
+    links: [
+      {
+        text: 'Project Link',
+        url: 'https://fitnessapp-client-git-master-julius-albert-grajos-projects.vercel.app/',
+      },
+    ],
+    technologies: [
+      { name: 'React', logo: techLogos.React },
+      { name: 'React Bootstrap', logo: techLogos.ReactBootstrap },
+      { name: 'JS', logo: techLogos.JavaScript },
+    ],
+  },
+  {
+    title: 'Fitness Tracker API Documentation',
+    description:
+      'Dynamic Fitness Tracker API Management: The system provides structured API routes for managing workouts, including creating, updating, deleting, and retrieving exercises. It features secure user authentication, real-time workout data updates, and seamless performance tracking. The backend API is fully documented and publicly available via Postman, ensuring easy integration and development.',
+    imgSrc: './images/projects/fitness-tracker-api.png',
+    links: [
+      {
+        text: 'View API Documentation',
+        url: 'https://documenter.getpostman.com/view/40605097/2sB2j96oE3',
+      },
+    ],
+    technologies: [
+      { name: 'JS', logo: techLogos.JavaScript },
+      { name: 'Express', logo: techLogos.Express },
+      { name: 'MongoDB', logo: techLogos.MongoDB },
+      { name: 'Postman', logo: techLogos.Postman },
+    ],
+  },
+  {
     title: 'Orders and Produce',
     description:
       'Created a website for a fictional store selling religious items, emphasizing its mission to support the poor and promote charity. Utilized HTML, CSS, and JavaScript to design user-friendly layouts and navigation, showcasing products and mission effectively.',
@@ -261,7 +296,10 @@ projects.forEach((project, index) => {
   const bgColor = index % 2 === 0 ? '#f4f1e8' : '#ffe8d2';
 
   projectCard.innerHTML = `
-    <img src="${project.imgSrc}" class="card-img-top" />
+    <img src="${
+      project.imgSrc
+    }" class="card-img-top" style="height: 250px; object-fit: cover;" />
+
     <div class="card-body" style="background-color: ${bgColor}; padding: 10px;">
       <h4 class="pt-md-3 pb-md-2">${project.title}</h4>
       <p>${project.description}</p>
