@@ -216,75 +216,75 @@ const projects = [
     ],
   },
 
-  {
-    title: 'Course Booking API Documentation',
-    description:
-      'RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.',
-    imgSrc: './images/projects/course-booking-app.jpg',
-    links: [
-      {
-        text: 'View API Documentation',
-        url: '#',
-        disabled: true,
-      },
-    ],
-    technologies: [
-      { name: 'JS', logo: techLogos.JavaScript },
-      { name: 'Express', logo: techLogos.Express },
-      { name: 'MongoDB', logo: techLogos.MongoDB },
-    ],
-  },
-  {
-    title: 'Course Booking App',
-    description:
-      'Course booking App A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.',
-    imgSrc: './images/projects/course-booking-app.jpg',
-    links: [
-      {
-        text: 'Project Link',
-        url: '#',
-        disabled: true,
-      },
-    ],
-    technologies: [
-      { name: 'React', logo: techLogos.React },
-      { name: 'React Bootstrap', logo: techLogos.ReactBootstrap },
-      { name: 'JS', logo: techLogos.JavaScript },
-    ],
-  },
+  // {
+  //   title: 'Course Booking API Documentation',
+  //   description:
+  //     'RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.',
+  //   imgSrc: './images/projects/course-booking-app.jpg',
+  //   links: [
+  //     {
+  //       text: 'View API Documentation',
+  //       url: '#',
+  //       disabled: true,
+  //     },
+  //   ],
+  //   technologies: [
+  //     { name: 'JS', logo: techLogos.JavaScript },
+  //     { name: 'Express', logo: techLogos.Express },
+  //     { name: 'MongoDB', logo: techLogos.MongoDB },
+  //   ],
+  // },
+  // {
+  //   title: 'Course Booking App',
+  //   description:
+  //     'Course booking App A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.',
+  //   imgSrc: './images/projects/course-booking-app.jpg',
+  //   links: [
+  //     {
+  //       text: 'Project Link',
+  //       url: '#',
+  //       disabled: true,
+  //     },
+  //   ],
+  //   technologies: [
+  //     { name: 'React', logo: techLogos.React },
+  //     { name: 'React Bootstrap', logo: techLogos.ReactBootstrap },
+  //     { name: 'JS', logo: techLogos.JavaScript },
+  //   ],
+  // },
 
-  {
-    title: 'Airline Booking System Mockup',
-    description:
-      'Side Project Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.',
-    imgSrc: './images/projects/airline-booking-mockup.png',
-    links: [
-      {
-        text: 'Project Link',
-        url: '#',
-        disabled: true,
-      },
-    ],
-    technologies: [{ name: 'Figma', logo: techLogos.Figma }],
-  },
-  {
-    title: 'Airline Booking System Prototype',
-    description:
-      'Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.',
-    imgSrc: './images/projects/airline-booking-prototype.png',
-    links: [
-      {
-        text: 'Project Link',
-        url: '#',
-        disabled: true,
-      },
-    ],
-    technologies: [
-      { name: 'React', logo: techLogos.React },
-      { name: 'React Bootstrap', logo: techLogos.ReactBootstrap },
-      { name: 'JS', logo: techLogos.JavaScript },
-    ],
-  },
+  // {
+  //   title: 'Airline Booking System Mockup',
+  //   description:
+  //     'Side Project Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.',
+  //   imgSrc: './images/projects/airline-booking-mockup.png',
+  //   links: [
+  //     {
+  //       text: 'Project Link',
+  //       url: '#',
+  //       disabled: true,
+  //     },
+  //   ],
+  //   technologies: [{ name: 'Figma', logo: techLogos.Figma }],
+  // },
+  // {
+  //   title: 'Airline Booking System Prototype',
+  //   description:
+  //     'Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.',
+  //   imgSrc: './images/projects/airline-booking-prototype.png',
+  //   links: [
+  //     {
+  //       text: 'Project Link',
+  //       url: '#',
+  //       disabled: true,
+  //     },
+  //   ],
+  //   technologies: [
+  //     { name: 'React', logo: techLogos.React },
+  //     { name: 'React Bootstrap', logo: techLogos.ReactBootstrap },
+  //     { name: 'JS', logo: techLogos.JavaScript },
+  //   ],
+  // },
 ];
 
 const container = document.getElementById('projects-container');
@@ -309,7 +309,7 @@ projects.forEach((project, index) => {
             (tech) => `
             <img src="${tech.logo}" alt="${tech.name} logo" 
             title="${tech.name}" class="tech-logo" />
-          `
+          `,
           )
           .join('')}
       </div>
@@ -317,10 +317,10 @@ projects.forEach((project, index) => {
         ${project.links
           .map((link) =>
             link.disabled
-              ? `<button type="button" class="btn btn-outline-secondary" disabled>${link.text}</button>`
+              ? `<button type="button" class="btn btn-outline-success" disabled>${link.text}</button>`
               : `<a href="${link.url}" target="_blank">
-                   <button type="button" class="btn btn-outline-secondary">${link.text}</button>
-                 </a>`
+                   <button type="button" class="btn btn-outline-success">${link.text}</button>
+                 </a>`,
           )
           .join('')}
       </div>
@@ -351,10 +351,10 @@ document.addEventListener('DOMContentLoaded', function () {
       window.innerWidth < 480
         ? 20 // Faster on small screens
         : window.innerWidth < 768
-        ? 20
-        : window.innerWidth < 992
-        ? 10
-        : 10;
+          ? 20
+          : window.innerWidth < 992
+            ? 10
+            : 10;
     carousel.style.animationDuration = `${speed}s`;
   }
 
